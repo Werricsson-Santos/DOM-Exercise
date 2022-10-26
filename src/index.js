@@ -15,10 +15,10 @@ addSkill.addEventListener('click', function () {
     inputTechSkills.name = 'technology'
     inputTechSkills.placeholder = 'Insira uma tecnologia que você utiliza:'
     inputTechSkills.ariaLabel = 'default input example'
-    tecnologies.appendChild(inputTechSkills)
 
     const workedTimeUl = document.createElement('ul')
     workedTimeUl.className = 'form-check d-flex mt-2'
+    
 
 
         const upTwoYearsLi = document.createElement('li')
@@ -51,5 +51,17 @@ addSkill.addEventListener('click', function () {
         fiveOrMoreYearsLi.appendChild(fiveOrMoreYearsLabel)
         workedTimeUl.appendChild(fiveOrMoreYearsLi)
     
-        tecnologies.append(workedTimeUl)
+        tecnologies.append(inputTechSkills, workedTimeUl)
 })
+
+
+
+function removeTechSkill(){
+    const tecnologies = document.getElementById('techSkills') 
+
+    const inputTechSkills = document.getElementsByTagName('input')
+    const workedTimeUl = document.getElementsByTagName('ul')
+
+    tecnologies.removeChild(inputTechSkills[inputTechSkills.length - 1])
+    tecnologies.removeChild(workedTimeUl[workedTimeUl.length -1])
+}
