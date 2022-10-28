@@ -32,8 +32,8 @@ header h1 {
     place-self: center;
     margin-left: 2rem;
     margin-right: 2rem;
-    width: auto;
-    max-width: 500px;
+    width: 500px;
+    max-width: auto;
     min-height: 400px;
     max-height: 100%;
     background-color: #383644F5;
@@ -43,4 +43,15 @@ header h1 {
 #submit {
     margin-top: auto;
     margin-bottom: 0px;
+}
+
+#techSkills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#removeBtn {
+    width: auto;
+    height: 30px;
 }
