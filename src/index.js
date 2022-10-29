@@ -78,7 +78,7 @@ addSkill.addEventListener('click', function () {
 
         const removeBtn = document.createElement('button')
             removeBtn.type = 'button'
-            removeBtn.className = 'btn btn-outline-danger text-center'
+            removeBtn.className = 'btn btn-outline-danger mt-2 text-center'
             removeBtn.innerText = 'Remover'
             removeBtn.addEventListener('click', function (){
                 tecnologies.removeChild(inputTechSkills)
