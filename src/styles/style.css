@@ -45,11 +45,6 @@ header h1 {
     margin-bottom: 0px;
 }
 
-#techSkills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 .technologies {
     display: flex;
     flex-wrap: wrap;
@@ -59,4 +54,20 @@ header h1 {
 #removeBtn {
     width: auto;
     height: 30px;
+}
+
+@media (max-width: 570px) {
+    body {
+        background-position-x: 39%;
+    }
+    #form-content {
+        width: auto;
+        min-height: 100%;
+    }
+    #removeBtn {
+        text-align: center;
+    }
+    .btn btn-outline-danger {
+        background-color: aliceblue;
+    }
 }

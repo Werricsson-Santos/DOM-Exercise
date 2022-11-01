@@ -96,29 +96,29 @@ addSkill.addEventListener('click', function () {
         technologies.appendChild(newRow)
 })
 
+
 form.addEventListener('submit', function (ev) {
         ev.preventDefault()
 
         const fullnameInput = document.getElementById('fullname')
-        const inputRows = document.querySelectorAll('.formInputs')
+        const newRow = document.querySelectorAll('.technologies')
 
 
         let technologies = []
-        inputRows.forEach(function (row) {
+        newRow.forEach(function (newRow,) {
                 
-                const techName = document.querySelector('#' + row.id + ' input[name="techName"]').value
-                console.log(techName)
-                const techExp = document.querySelector('#' + row.id + ' input[type="radio"]:checked')
+                const techName = document.querySelector('#' + newRow.id + ' input[name="techName"]').value
+                const techExp = document.querySelector('#' + newRow.id + ' input[type="radio"]:checked').value
                 technologies.push({ name: techName, exp: techExp})
         })
 
         const newDev = { fullname: fullnameInput.value, technologies: technologies }
         developers.push(newDev)
-        alert('Dev cadastrado com sucesso!')
+        alert('Dev cadastrado com sucesso!' + '\n Pressione F12 e veja o cadastro no console!')
 
         fullnameInput.value = ''
-        inputRows.forEach(function (row) {
-                row.remove()
+        newRow.forEach(function (newRow) {
+                newRow.remove()
         })
 
         console.log(developers)
