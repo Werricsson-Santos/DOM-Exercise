@@ -114,7 +114,7 @@ form.addEventListener('submit', function (ev) {
 
         const newDev = { fullname: fullnameInput.value, technologies: technologies }
         developers.push(newDev)
-        alert('Dev cadastrado com sucesso!' + '\n Pressione F12 e veja o cadastro no console!')
+        alert('Dev cadastrado com sucesso!' + '\nPressione F12 e veja o cadastro no console!')
 
         fullnameInput.value = ''
         newRow.forEach(function (newRow) {
