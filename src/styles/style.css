@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 header {
@@ -32,6 +33,7 @@ header h1 {
     place-self: center;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 10%;
     width: 500px;
     max-width: auto;
     min-height: 400px;
@@ -55,17 +57,28 @@ header h1 {
     width: auto;
     height: 30px;
 }
-
+footer {
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(193, 38%, 86%);
+    font-size: 11px; text-align: center;
+} footer a { 
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 5px; 
+        background-color: hsla(150, 100%, 66%, 0.8); 
+        color: hsl(228, 45%, 44%); 
+    }
 @media (max-width: 570px) {
     body {
         background-position-x: 39%;
     }
     #form-content {
+        align-self: start;
         width: auto;
-        min-height: 100%;
-    }
-    #removeBtn {
-        text-align: center;
+        padding-bottom: 0;
     }
     .btn btn-outline-danger {
         background-color: aliceblue;
